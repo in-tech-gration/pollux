@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="title"
+      content="🌞 Pollux - Mock rest APIs - GraphQL - relational JSON without a single line of code 🌞"
+    />
+    <meta
+      name="description"
+      content="Mock rest APIs - GraphQL - relational JSON without a single line of code"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="title"
-    content="🌞 Pollux - Mock rest APIs - GraphQL - relational JSON without a single line of code 🌞" />
-  <meta name="description" content="Mock rest APIs - GraphQL - relational JSON without a single line of code" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/Rowadz" />
+    <meta
+      property="og:title"
+      content="🌞 Pollux - Mock rest APIs - GraphQL - relational JSON without a single line of code 🌞"
+    />
+    <meta
+      property="og:description"
+      content="Mock rest APIs - GraphQL - relational JSON without a single line of code"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/Rowadz/pollux/master/social_02.png"
+    />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://github.com/Rowadz" />
-  <meta property="og:title"
-    content="🌞 Pollux - Mock rest APIs - GraphQL - relational JSON without a single line of code 🌞" />
-  <meta property="og:description" content="Mock rest APIs - GraphQL - relational JSON without a single line of code" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/Rowadz/pollux/master/social_02.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="Generate fake Data" />
+    <meta property="twitter:url" content="https://github.com/Rowadz" />
+    <meta
+      property="twitter:title"
+      content="🌞 Pollux - Mock rest APIs - GraphQL - relational JSON without a single line of code 🌞"
+    />
+    <meta
+      property="twitter:description"
+      content="Mock rest APIs - GraphQL - relational JSON without a single line of code"
+    />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/Rowadz/pollux/master/social_02.png"
+    />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="Generate fake Data" />
-  <meta property="twitter:url" content="https://github.com/Rowadz" />
-  <meta property="twitter:title"
-    content="🌞 Pollux - Mock rest APIs - GraphQL - relational JSON without a single line of code 🌞" />
-  <meta property="twitter:description"
-    content="Mock rest APIs - GraphQL - relational JSON without a single line of code" />
-  <meta property="twitter:image" content="https://raw.githubusercontent.com/Rowadz/pollux/master/social_02.png" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <!-- <script src="https://cmp.osano.com/169sqPTFiyGBVAdA/2aac0035-cfc9-45bc-a085-49fae3d9e90c/osano.js"></script> -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-N094K43EJM"></script> -->
-  <!-- <script>
+    <meta name="google-adsense-account" content="ca-pub-4113971173595182" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4113971173595182"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-N094K43EJM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-N094K43EJM')
+    </script>
+
+    <!-- <script src="https://cmp.osano.com/169sqPTFiyGBVAdA/2aac0035-cfc9-45bc-a085-49fae3d9e90c/osano.js"></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-N094K43EJM"></script> -->
+    <!-- <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-N094K43EJM');
   </script> -->
-  <!--
+    <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -51,16 +94,16 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>
-    Pollux - Mock rest APIs - GraphQL - relational JSON without a single line
-    of code
-  </title>
-</head>
+    <title>
+      Pollux - Mock rest APIs - GraphQL - relational JSON without a single line
+      of code
+    </title>
+  </head>
 
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-  <!--
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -70,11 +113,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4113971173595182"
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4113971173595182"
     crossorigin="anonymous"></script> -->
 
-  <!-- Hotjar Tracking Code for  -->
-  <!-- <script>
+    <!-- Hotjar Tracking Code for  -->
+    <!-- <script>
     (function (h, o, t, j, a, r) {
       h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
       h._hjSettings = { hjid: 3088315, hjsv: 6 };
@@ -84,7 +127,23 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script> -->
-  <script defer data-domain="pollux.dev" src="https://plausible.io/js/script.js"></script>
-</body>
+    <script
+      defer
+      data-domain="pollux.dev"
+      src="https://plausible.io/js/script.js"
+    ></script>
 
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="rowadz"
+      data-description="Support me on Buy me a coffee!"
+      data-message=""
+      data-color="#FF5F5F"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"
+    ></script>
+  </body>
 </html>
